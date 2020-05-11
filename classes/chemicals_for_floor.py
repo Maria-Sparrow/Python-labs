@@ -1,7 +1,7 @@
-from classes.abstract_household_chemicals import AbstractHouseholdChemicals
+from chemicals.classes.household_chemicals import HouseholdChemicals
 
 
-class ChemicalsForFloor(AbstractHouseholdChemicals):
+class ChemicalsForFloor(HouseholdChemicals):
     def __init__(self, producer, price_in_uah, weight_in_grams, solubility_in_percent, type_chemical, detergent_type,
                  type_of_floor=None):
         super().__init__(producer, price_in_uah, weight_in_grams, solubility_in_percent, type_chemical, detergent_type)
